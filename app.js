@@ -1,12 +1,24 @@
 import express from 'express';
-import {PORT} from "./env.js";
+import {PORT} from "./public/env.js";
  
 const app = express();
 
+// console.log(__dirname);
+// console.log(__filename); 
 app.get("/",(req,res)=>{
-   return  res.send("<h1>Hello World !!</h1>");
+
+    console.log(import.meta.dirname )
+    console.log(import.meta.url)
+
+    //  res.send("<h1>Hello World !!</h1>");
+    res.send("Hi");
 
 })
+app.listen(PORT,()=>{
+    console.log(`Server is running on port ${PORT}`)
+})
+
+
 app.get("/about",(req,res)=>{
    return  res.send(`
     <!DOCTYPE html>
@@ -98,7 +110,11 @@ app.get("/about",(req,res)=>{
 </body>
 </html>
 
+
     `);
+
+
+
  
 
 })
@@ -106,14 +122,6 @@ app.get("/about",(req,res)=>{
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-
-
-
-
-
-
-
 
 
 app.get("/contactus",(req,res)=>{
