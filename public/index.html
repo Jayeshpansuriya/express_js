@@ -51,11 +51,43 @@
   </style>
 </head>
 <body>
-  <div class="card">
+  <!-- <div class="card">
     <img src="https://i.pravatar.cc/150?img=10" alt="Profile Picture">
     <h2>Jayesh Daku</h2>
     <p>Full Stack Developer</p>
     <a href="https://github.com/" target="_blank" class="btn">View GitHub</a>
-  </div>
+  </div> -->
+
+  <form style="margin-top: 30px; text-align: center;" action="/contact" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" style="padding: 8px; width: 200px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" style="padding: 8px; width: 200px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" style="padding: 8px; width: 200px; border-radius: 4px; border: 1px solid #ccc;"></textarea><br><br>
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Subscribe to newsletter</label><br><br>
+    <input type="radio" id="option1" name="options" value="option1">
+    <label for="option1">Option 1</label><br>
+    <input type="radio" id="option2" name="options" value="option2">
+    <label for="option2">Option 2</label><br>
+    <input type="radio" id="option3" name="options" value="           option3">
+    <label for="option3">Option 3</label><br><br>
+    <select id="dropdown" name="dropdown" style="padding: 8px; width: 200px; border-radius: 4px; border: 1px solid #ccc;">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select><br><br>
+    <input type="file" id="fileInput" name="fileInput" style="      padding: 8px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <input type="color" id="colorPicker" name="colorPicker" value="#ff0000" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <input type="date" id="dateInput" name="dateInput" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <input type="time" id="timeInput" name="timeInput" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <input type="number" id="numberInput" name="numberInput" min="1" max="100" style="padding: 8px; width: 200px; border-radius: 4px; border: 1px solid #ccc;"><br><br>
+    <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="50" style="width: 200px;"><br><br>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label><br><br>
+    <input type="submit" value="Submit" style="padding: 10px  20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    <button type="submit" class="btn">Submit</button>
+  </form>
 </body>
 </html>
